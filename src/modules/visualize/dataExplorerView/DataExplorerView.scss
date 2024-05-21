@@ -1,0 +1,29 @@
+$line-color-1: black;
+$line-color-2: rgb(38, 38, 38);
+
+.explorer-w {
+    height: calc(100vh - 55px);
+    width: calc(75vw);
+    position: absolute;
+    background-image: linear-gradient(var($line-color-1) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, var($line-color-1) 1.5px, transparent 1.5px),
+        linear-gradient(var($line-color-2) 1px, transparent 1px),
+        linear-gradient(90deg, var($line-color-2) 1px, transparent 1px);
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.node-parent {
+    visibility: hidden;
+}
+
+.edge-arrow {
+    fill: var(--arrow-line) !important;
+}
+
+.v-edge {
+    stroke: var(--arrow-line) !important;
+}
